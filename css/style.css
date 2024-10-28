@@ -1,0 +1,98 @@
+
+/* Corpo */
+body{
+    font-family: 'Verdana';
+    font-size: 16px;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* FIM Corpo END */
+
+
+
+/* Cabecalho */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #000;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    padding: 15px;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 670px) {
+    .links{
+        flex-direction: column;
+        font-size: 0.5rem;
+        gap: 5px;
+    }
+    .links li{
+        background-color: rgb(59, 59, 59);
+
+        border-radius: 3px;
+        padding: 3px;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+    }
+}
+
+/* FIM Cabecalho END */
+
+
+/* Conteudo */
+
+h3, p{
+    text-align: center;
+    font-weight: normal;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    margin-inline: 10%;
+}
+
+article{    
+    flex: 1 1 200px;
+    max-width: 500px;
+}
+
+img{
+    width: 100%;
+}
+section p{
+    margin: 0;
+    color: #6f6e6e;
+    font-size: 1rem;
+}
+
+@media (max-width: 670px) {
+    section{
+        margin-inline: 5%;
+    }
+    section p{
+        font-size: 1.25rem;
+    }
+}
+
+/* FIM Conteudo END */
